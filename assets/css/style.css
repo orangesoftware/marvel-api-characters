@@ -1,0 +1,128 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --font-family: "Poppins", sans-serif;
+    font-family: "Bebas Neue",cursive;
+}
+
+:root{
+    --danger-color: #dc3545;
+    --background-light-color-2: rgba(3, 127, 255, 0.3);
+    --font-dark-color: #313131;
+    --border-radius: 7px;
+    --padding:7px;
+    --margin:7px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.pagination li{
+    margin: 0 10px;
+}   
+
+.pagination li a{
+    text-decoration: none;
+    color: var(--font-dark-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination li a.active{
+    background-color: var(--background-light-color-2);
+}
+
+.pagination li a:hover{
+    background-color: var(--background-light-color-2);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    border: 1px solid  rgba(0, 0, 0, 0.2);;
+    /*background-color: 1px solid black;*/
+    border-radius: var(--border-radius);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    /*padding: var(--padding);*/
+    margin: var(--margin);
+}
+
+.card-body{
+    padding: 7px;
+}
+
+.card-body p{
+    height: 18As0px;;
+    overflow-y: auto;
+}
+
+.hide{
+    display: none;
+    visibility: hidden;
+}
+
+.show{
+    display: block;
+    visibility: visible;
+}
+
+.card-content a{
+    padding:var(--padding);
+    color: var(--danger-color);
+}
+
+.card-content a:hover{
+    text-decoration:underline;
+    font-weight: bold;
+
+}
+.card-content img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.card-content h3{
+    font-size: 1.5rem;
+    color: black;
+    padding: var(--padding);
+}
+
+.card-description{
+    display: none;
+    visibility: hidden;
+}
+
+#content{
+    height: 350px;
+    overflow-y: auto;
+}
