@@ -8,6 +8,8 @@ This app need keys from https://developer.marvel.com/ generate and replace in as
 
 This page is using bootstrap to show the modal windows and md5.js library.
 
+index.html is the entry point.
+
 Modal:
 https://getbootstrap.com/docs/5.3
 
