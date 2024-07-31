@@ -153,7 +153,7 @@ var currentSet = 1;
     if (validateKeys === false) {
       return;
     }
-
+    
     const ts = Date.now();
     var hash = md5(ts + PRIVATE_KEY + PUBLIC_KEY);
     const OFFSET =(pageNumber - 1) * RECORDS_PER_PAGE;
@@ -173,7 +173,6 @@ var currentSet = 1;
         });
     });
     
-    //generate ramdom
     
   const handlerComics=((id,name)=>{
     
